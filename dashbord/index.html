@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css">
+    <script src="./src/main.js" type="module"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header>
+      <div class="flex items-center justify-between p-4">
+        <!-- Search Section -->
+  
+        <form class="form relative right-80">
+          <button class="absolute left-2 -translate-y-1/2 top-1/2 p-1">
+            <svg
+              width="17"
+              height="16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-labelledby="search"
+              class="w-5 h-5 text-gray-700"
+            >
+              <path
+                d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
+                stroke="currentColor"
+                stroke-width="1.333"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+          <input
+            class="input rounded-full px-8 py-2 border-2 border-transparent focus:outline-none bg-white transition-all duration-300 shadow-md"
+            placeholder="Search..."
+            required=""
+            type="text"
+          />
+          <button
+            type="reset"
+            class="absolute right-3 -translate-y-1/2 top-1/2 p-1"
+          ></button>
+        </form>
+  
+        <!-- Icons Section -->
+        <div class="flex items-center space-x-4">
+          <!-- Light Mode Icon -->
+          <button
+            class="relative  w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-md transition-all duration-300 hover:bg-gray-200"
+          >
+            <svg
+              class="w-6 h-6 text-gray-500"
+              focusable="false"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 9c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3m0-2c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5M2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1m18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1M11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1m0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1M5.99 4.58c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41zm12.37 12.37c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41zm1.06-10.96c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0zM7.05 18.36c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0z"
+              ></path>
+            </svg>
+          </button>
+  
+          <!-- Language Icon -->
+          <div class="relative inline-block text-left transition-all pl-6  pr-2 group">
+            <button
+              class="w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-md hover:bg-gray-200"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/gb.svg"
+                class="w-6 h-auto"
+              />
+            </button>
+            <div
+              class="absolute right-0 mt-2 w-32 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-opacity-5 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+            >
+              <div class="py-1">
+                <a href="#" class="text-gray-700 block px-4 py-2 text-sm">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/ae.svg"
+                    class="w-6 h-auto inline-block mr-2 transition-all"
+                  />
+                  عربی
+                </a>
+                <a href="#" class="text-gray-700 block px-4 py-2 text-sm">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/it.svg"
+                    class="w-6 h-auto inline-block mr-2 transition-all"
+                  />
+                  ایتالیایی
+                </a>
+                <a href="#" class="text-gray-700 block px-4 py-2 text-sm">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/es.svg"
+                    class="w-6 h-auto inline-block mr-2 transition-all"
+                  />
+                  اسپانیایی
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Chat Icon -->
+          <button
+            class="relative w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-md hover:bg-gray-200"
+          >
+            <svg
+              class="w-6 h-6 text-gray-500"
+              focusable="false"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m0 14H6l-2 2V4h16z"
+              ></path>
+            </svg>
+            <span
+              class="absolute top-2 right-2 w-3 h-3 bg-orange-500 rounded-full border-2 border-white"
+            ></span>
+          </button>
+  
+          <!-- Notification Icon -->
+          <button
+            class="relative w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-md hover:bg-gray-200"
+          >
+            <svg
+              class="w-6 h-6 text-gray-500"
+              focusable="false"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10.01 21.01c0 1.1.89 1.99 1.99 1.99s1.99-.89 1.99-1.99zM12 6c2.76 0 5 2.24 5 5v7H7v-7c0-2.76 2.24-5 5-5m0-4.5c-.83 0-1.5.67-1.5 1.5v1.17C7.36 4.85 5 7.65 5 11v6l-2 2v1h18v-1l-2-2v-6c0-3.35-2.36-6.15-5.5-6.83V3c0-.83-.67-1.5-1.5-1.5M11 8h2v4h-2zm0 6h2v2h-2z"
+              ></path>
+            </svg>
+            <span
+              class="absolute top-2 right-2 w-3 h-3 bg-orange-500 rounded-full border-2 border-white"
+            ></span>
+          </button>
+  
+          <!-- Avatar -->
+          <div class="w-10 h-10 rounded-full overflow-hidden">
+            <img
+              src="./public/img/avatar10.jpg"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-10 w-full">
+      <section class="bg-white rounded-xl shadow-lg p-6 w-full">
+          <div class="flex flex-row space-x-4 w-full">
+              <!-- باکس اول -->
+              <div class="flex flex-col border-l-4 border-gray-100 p-2 flex-grow">
+                  <div class="flex items-center mb-4">
+                      <img src="./public/img/عکس1.jpg" alt="عکس کاربر" class="w-10 h-10 rounded-full ml-3">
+                      <h2 class="text-xl font-semibold">سلام محمدحسین واحدی!</h2>
+                  </div>
+                  <div class="flex items-center mb-3">
+                      <p class="text-gray-700">در حال حاضر، شما یک حساب <span class="font-medium">استلار</span> دارید.</p>
+                  </div>
+                  <div class="flex items-center mb-3">
+                      <i class="fas fa-check-circle text-blue-500 text-xl ml-3"></i>
+                      <p class="text-gray-700">موجودی اولیه: <span class="font-medium">۶,۰۰۰ دلار</span></p>
+                  </div>
+                  <div class="flex items-center mb-3">
+                      <i class="fas fa-check-circle text-blue-500 text-xl ml-3"></i>
+                      <p class="text-gray-700">نوع برنامه: <span class="font-medium">چالش دو مرحله‌ای استلار P11 6K</span></p>
+                  </div>
+                  <div class="flex items-center">
+                      <i class="fas fa-check-circle text-blue-500 text-xl ml-3"></i>
+                      <p class="text-gray-700">نوع حساب: <span class="font-medium">سواپ</span></p>
+                  </div>
+              </div>
+  
+              <!-- باکس دوم -->
+              <div class="bg-white border-l-4 border-gray-100 p-6 w-1/2">
+                  <div class="flex items-center mb-4">
+                      <i class="fas fa-sun text-gray-500 text-xl ml-3"></i>
+                      <h2 class="text-xl font-semibold">جزئیات حساب</h2>
+                  </div>
+                  <div class="grid grid-cols-2 gap-4">
+                      <!-- فیلد ورود -->
+                      <div class="relative">
+                          <input type="text" placeholder="ورود" value="22073937" class="w-full p-2 border border-gray-300 rounded-lg pr-5">
+                          <i class="fas fa-copy text-gray-200 text-xl absolute inset-y-2 flex right-70 items-center pr-5"></i>
+                      </div>
+                      <!-- فیلد رمز سرمایه‌گذار -->
+                      <div class="relative">
+                          <input type="password" placeholder="رمز سرمایه‌گذار" class="w-full p-2 border border-gray-300 rounded-lg">
+                          <a href="#" class="absolute inset-y-0 right-56 flex items-center pr-3 text-blue-500 hover:text-blue-700 text-sm underline">setpassword</a>
+                      </div>
+                      <!-- فیلد تنظیم رمز -->
+                      <div class="relative">
+                          <input type="password" placeholder="رمز اصلی" value="Baset View" class="w-full p-2 border border-gray-300 rounded-lg pr-36">
+                          <div class="absolute inset-y-1 right-56 flex items-center space-x-2 pr-3">
+                              <a href="#" class="text-blue-500 hover:text-blue-700 text-sm underline">View</a>
+                              <a href="#" class="text-blue-500 hover:text-blue-700 text-sm underline">Review</a>
+                          </div>
+                      </div>
+                      <!-- فیلد سرور -->
+                      <div>
+                          <input type="password" placeholder="سرور" class="w-full p-2 border border-gray-300 rounded-lg">
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- باکس سوم -->
+              <div class="bg-white p-6 w-96">
+                  <div class="flex items-center mb-4">
+                      <i class="fas fa-chart-line text-blue-500 text-xl ml-3"></i>
+                      <h2 class="text-xl font-semibold">جزئیات چرخه معاملاتی</h2>
+                  </div>
+                  <div class="space-y-4">
+                      <!-- تاریخ شروع -->
+                      <div class="flex items-center">
+                          <p class="text-gray-700">تاریخ شروع: <span class="font-medium">۳ ژانویه ۲۰۲۴</span></p>
+                      </div>
+                      <!-- تاریخ پایان -->
+                      <div class="flex items-center">
+                          <p class="text-gray-700">تاریخ پایان: <span class="font-medium">نامحدود</span></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+    <section class="mt-5">
+      <div class="bg-white rounded-lg shadow-lg p-6 w-full ">
+        <div class="flex items-center mb-4">
+          <i class="fas fa-chart-bar text-blue-500 text-xl ml-3"></i>
+          <h2 class="text-xl font-semibold">آمار</h2>
+      </div>
+      <div class="grid grid-cols-4 gap-4">
+        <!-- باکس اول: موجودی -->
+        <div class="bg-white border-l-4 border-blue-500 rounded-lg shadow-md p-6 ">
+            <div class="flex items-center mb-4">
+                <i class="fas fa-wallet text-blue-400 text-2xl ml-3"></i>
+                <div>
+                    <h2 class="text-xl font-semibold">$5,565.07</h2>
+                    <p class="text-gray-700">موجودی</p>
+                </div>
+            </div>
+        </div>
+        <!-- باکس دوم: سود و زیان -->
+        <div class="bg-white border-l-4 border-red-500 rounded-lg shadow-md p-6 ">
+          <!-- بخش بالایی: نشانه درصد ضرر -->
+          <div class="self-end mb-5">
+            <span class="bg-red-100 text-red-800 text-sm font-semibold px-3 py-1 rounded-full">
+              7.25%-
+            </span>
+          </div>
+        
+          <!-- بخش اصلی: آیکون و اطلاعات سود و زیان -->
+          <div class="flex items-center mb-4">
+            <!-- آیکون -->
+            <i class="fas fa-chart-line text-red-400 text-2xl ml-3"></i>
+            <!-- متن سود و زیان -->
+            <div>
+              <h2 class="text-xl font-semibold">$434.93</h2>
+              <p class="text-gray-700">سود و زیان</p>
+            </div>
+          </div>
+        </div>
+        <!-- باکس سوم: زیان شناور -->
+        <div class="bg-white border-l-4 border-yellow-500 rounded-lg shadow-md p-6">
+            <div class="flex items-center mb-4">
+                <i class="fas fa-water text-yellow-400 text-2xl ml-3"></i>
+                <div>
+                    <h2 class="text-xl font-semibold">-7.23%</h2>
+                    <p class="text-gray-700">ضررهای مکرر</p>
+                </div>
+            </div>
+        </div>
+        <!-- باکس چهارم: روزهای معاملاتی -->
+        <div class="bg-white border-l-4 border-green-500 rounded-lg shadow-md p-6">
+            <div class="flex items-center mb-4">
+                <i class="fas fa-calendar-day text-green-400 text-2xl ml-3"></i>
+                <div>
+                    <h2 class="text-xl font-semibold">44</h2>
+                    <p class="text-gray-700">روزهای معاملاتی</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        </div>
+
+    </div>
+    </section>
+    <section class="mt-5 ">
+      <section class="bg-white rounded-lg shadow-lg p-6 w-full">
+        <!-- ردیف اول -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          <!-- باکس ۱: محدودیت ضرر روزانه -->
+          <div class="box-styles bg-gradient-to-br from-blue-100 to-white">
+            <div class="box-header">
+              <span class="badge-styles">
+                ضرر روزانه
+                <i class="fas fa-circle text-red-500 text-sm mr-2"></i>
+              </span>
+            </div>
+            <div class="box-content">
+              <i class="fas fa-check-circle text-blue-500 text-xl ml-3"></i>
+              <h3 class="text-xl font-bold text-gray-800">محدودیت ضرر روزانه</h3>
+            </div>
+            <div class="box-details">
+              <p>حداکثر ضرر مجاز: <span class="font-semibold">$300.00</span></p>
+              <p class="mt-1">ضرر روزانه فعلی: <span class="font-semibold">$134.93</span></p>
+            </div>
+          </div>
+      
+          <!-- باکس ۲: حداقل روزهای معاملاتی -->
+          <div class="box-styles bg-gradient-to-br from-white to-blue-100">
+            <div class="box-header">
+              <span class="badge-styles">
+                روزهای معاملاتی
+                <i class="fas fa-circle text-green-500 text-sm mr-2"></i>
+              </span>
+            </div>
+            <div class="box-content">
+              <i class="fas fa-check-circle text-blue-500 text-xl ml-3"></i>
+              <h3 class="text-xl font-bold text-gray-800">حداقل روزهای معاملاتی</h3>
+            </div>
+            <div class="box-details">
+              <p>حداقل: <span class="font-semibold">5 روز</span></p>
+              <p class="mt-1">نتیجه فعلی: <span class="font-semibold mt-3">44 روز</span></p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- ردیف دوم -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- باکس ۳: محدودیت ضرر کلی -->
+          <div class="box-styles bg-gradient-to-br from-blue-100 to-white">
+            <div class="box-header">
+              <span class="badge-styles">
+                ضرر کلی
+                <i class="fas fa-circle text-red-500 text-sm mr-2"></i>
+              </span>
+            </div>
+            <div class="box-content">
+              <i class="fas fa-check-circle text-blue-500 text-xl ml-3"></i>
+              <h3 class="text-xl font-bold text-gray-800">محدودیت ضرر کلی</h3>
+            </div>
+            <div class="box-details">
+              <p>حداکثر ضرر مجاز: <span class="font-semibold">$600.00</span></p>
+              <p class="mt-1">ضرر کلی فعلی: <span class="font-semibold ">$434.93</span></p>
+            </div>
+          </div>
+      
+          <!-- باکس ۴: هدف سود -->
+          <div class="box-styles bg-gradient-to-br from-white to-blue-100">
+            <div class="box-header">
+              <span class="badge-styles">
+                هدف سود
+                <i class="fas fa-circle text-red-500 text-sm mr-2"></i>
+              </span>
+            </div>
+            <div class="box-content">
+              <i class="fas fa-check-circle text-blue-500 text-xl ml-3"></i>
+              <h3 class="text-xl font-bold text-gray-800">هدف سود</h3>
+            </div>
+            <div class="box-details">
+              <p>حداقل: <span class="font-semibold">$480.00</span></p>
+              <p class="mt-1">نتیجه فعلی: <span class="font-semibold">$0</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+       <!-- بخش زمان: عنوان و ایمیل -->
+      <div class="bg-gradient-to-r from-blue-50 to-white rounded-lg shadow-lg p-6 max-w-md mx-auto mt-5"> 
+       <div class="text-center mb-6"> 
+          <h2 class="text-xl font-semibold text-gray-800">پشتیبانی ایمیل FundedNext</h2>
+          <p class="text-gray-600 mt-3">تماس: <a href="mailto:support@fundednext.com" class="text-blue-500 hover:underline">support@fundednext.com</a></p>
+          <div class="inline-flex mt-3 items-center justify-center w-18 h-18 bg-blue-100 rounded-full ">
+            <i class="fas fa-envelope text-blue-500 text-xl"></i>
+          </div>
+        </div>
+        <div class="text-center mb-6">
+          <p class="text-gray-700 mb-2">زیان مجاز امروز در زمان زیر ریست می‌شود:</p>
+          <div class="inline-block border-2 border-blue-200 rounded-lg px-4 py-2">
+            <span class="text-3xl font-bold text-red-600">۱۰:۴۶:۲۵</span>
+          </div>
+        </div>
+        <div class="text-center text-gray-500 text-sm">
+          منطقه زمانی: <span class="font-semibold">GMT+2</span>
+        </div>
+      </div>
+    
+    </main>
+    
+    <!-- Sidebar -->
+    <section class="flex h-screen overflow-hidden">
+      <!-- دکمه همبرگر برای موبایل -->
+      <button id="menu-toggle" class="fixed top-4 left-4 p-2 bg-white rounded-lg shadow-lg lg:hidden">
+          <i class="mdi mdi-menu text-gray-700 text-2xl"></i>
+      </button>
+
+      <div class="flex h-screen overflow-hidden">
+          <!-- سایدبار -->
+          <div id="sidebar" class="w-64 bg-white shadow-2xl sidebar lg:translate-x-0 sidebar-hidden fixed top-0 right-0 bottom-0 overflow-y-hidden transition-all duration-300 ease-in-out">
+            <div class="p-4 ">
+                <a href="/" class="flex items-center">
+                    <img src="./public/img/logo.png" alt="لوگو" class="h-12" />
+                </a>
+            </div>
+            <div class="overflow-y-auto h-full">
+                <ul class="p-2">
+                    <li class="p-2 text-gray-700 font-semibold">خانه</li>
+                      <li class="p-2 hover:bg-gray-100 rounded">
+                          <a href="/dashboards/misc" class="flex items-center">
+                              <i class="mdi mdi-home text-gray-600 text-xl"></i>
+                              <span class="mr-2">خانه</span>
+                          </a>
+                      </li>
+                      <li class="p-2 hover:bg-gray-100 rounded">
+                          <a href="/dashboards/misc" class="flex items-center">
+                              <i class="mdi mdi-graphic-eq text-gray-600 text-xl"></i>
+                              <span class="mr-2">متفرقه</span>
+                          </a>
+                      </li>
+                      <li class="p-2 hover:bg-gray-100 rounded">
+                          <a href="/dashboards/crypto" class="flex items-center">
+                              <i class="mdi mdi-currency-btc text-gray-600 text-xl"></i>
+                              <span class="mr-2">ارز دیجیتال</span>
+                          </a>
+                      </li>
+                      <li class="p-2 hover:bg-gray-100 rounded">
+                          <a href="/dashboards/listing" class="flex items-center">
+                              <i class="mdi mdi-format-list-bulleted text-gray-600 text-xl"></i>
+                              <span class="mr-2">لیست‌ها</span>
+                          </a>
+                      </li>
+                      <li class="p-2 hover:bg-gray-100 rounded">
+                          <a href="/dashboards/crm" class="flex items-center">
+                              <i class="mdi mdi-account-group text-gray-600 text-xl"></i>
+                              <span class="mr-2">CRM</span>
+                          </a>
+                      </li>
+                      <li class="p-2 hover:bg-gray-100 rounded">
+                          <a href="/dashboards/intranet" class="flex items-center">
+                              <i class="mdi mdi-lan text-gray-600 text-xl"></i>
+                              <span class="mr-2">اینترانت</span>
+                          </a>
+                      </li>
+                      <li class="p-2 hover:bg-gray-100 rounded">
+                          <a href="/dashboards/ecommerce" class="flex items-center">
+                              <i class="mdi mdi-cart text-gray-600 text-xl"></i>
+                              <span class="mr-2">فروشگاه</span>
+                          </a>
+                      </li>
+                      <li class="p-2 hover:bg-gray-100 rounded">
+                          <a href="/dashboards/news" class="flex items-center">
+                              <i class="mdi mdi-newspaper text-gray-600 text-xl"></i>
+                              <span class="mr-2">اخبار</span>
+                          </a>
+                      </li>
+                      <li class="p-2 text-gray-700 font-semibold">کارت‌ها</li>
+                      <li class="p-2 hover:bg-gray-100 rounded">
+                          <a href="/widgets" class="flex items-center">
+                              <i class="mdi mdi-widgets text-gray-600 text-xl"></i>
+                              <span class="mr-2">ویجت‌ها</span>
+                          </a>
+                      </li>
+                      <li class="p-2 hover:bg-gray-100 rounded">
+                          <a href="/metrics" class="flex items-center">
+                              <i class="mdi mdi-chart-bar text-gray-600 text-xl"></i>
+                              <span class="mr-2">معیارها</span>
+                          </a>
+                      </li>
+                      <li class="p-2 text-gray-700 font-semibold">کاربر</li>
+                      <li class="p-2 hover:bg-gray-100 rounded">
+                          <a href="/user/social-wall" class="flex items-center">
+                              <i class="mdi mdi-account-multiple text-gray-600 text-xl"></i>
+                              <span class="mr-2">دیوار اجتماعی</span>
+                          </a>
+                      </li>
+                      <li class="p-2 hover:bg-gray-100 rounded">
+                          <a href="/user/settings/public-profile" class="flex items-center">
+                              <i class="mdi mdi-cog text-gray-600 text-xl"></i>
+                              <span class="mr-2">تنظیمات</span>
+                          </a>
+                      </li>
+                      <li class="p-2 text-gray-700 font-semibold">پروفایل‌ها</li>
+                      <li class="p-2 hover:bg-gray-100 rounded">
+                          <a href="/user/profile-1" class="flex items-center">
+                              <i class="mdi mdi-account text-gray-600 text-xl"></i>
+                              <span class="mr-2">پروفایل ۱</span>
+                          </a>
+                      </li>
+                      <li class="p-2 hover:bg-gray-100 rounded">
+                          <a href="/user/profile-2" class="flex items-center">
+                              <i class="mdi mdi-account-check text-gray-600 text-xl"></i>
+                              <span class="mr-2">پروفایل ۲</span>
+                          </a>
+                      </li>
+                      <li class="p-2 hover:bg-gray-100 rounded">
+                          <a href="/user/profile-3" class="flex items-center">
+                              <i class="mdi mdi-account-circle text-gray-600 text-xl"></i>
+                              <span class="mr-2">پروفایل ۳</span>
+                          </a>
+                      </li>
+                      <li class="p-2 hover:bg-gray-100 rounded">
+                          <a href="/user/profile-4" class="flex items-center">
+                              <i class="mdi mdi-account-group text-gray-600 text-xl"></i>
+                              <span class="mr-2">پروفایل ۴</span>
+                          </a>
+                      </li>
+                      <li class="p-2 text-gray-700 font-semibold">شروع کار</li>
+                      <li class="p-2 hover:bg-gray-100 rounded">
+                          <a href="/onboarding-1" class="flex items-center">
+                              <i class="mdi mdi-rocket text-gray-600 text-xl"></i>
+                              <span class="mr-2">شروع کار ۱</span>
+                          </a>
+                      </li>
+                      <li class="p-2 hover:bg-gray-100 rounded">
+                          <a href="/onboarding-2" class="flex items-center">
+                              <i class="mdi mdi-handshake text-gray-600 text-xl"></i>
+                              <span class="mr-2">شروع کار ۲</span>
+                          </a>
+                      </li>
+                      <li class="p-2 hover:bg-gray-100 rounded">
+                          <a href="/onboarding-3" class="flex items-center">
+                              <i class="mdi mdi-account-check text-gray-600 text-xl"></i>
+                              <span class="mr-2">شروع کار ۳</span>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+         </div>
+      
+  </section>
+
+
+    <!-- Script -->
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.toggle('sidebar-hidden');
+        });
+    </script>
+</body>
+</html>

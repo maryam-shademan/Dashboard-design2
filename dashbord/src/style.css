@@ -1,0 +1,42 @@
+@import "tailwindcss";
+/* فایل styles.css */
+@font-face {
+  font-family: 'GeistMono';
+  src: url('../public//fonts/lazlo.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'GeistMono', sans-serif;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #cecdcd;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #b4aeae;
+}
+#sidebar:hover {
+  overflow-y: auto; 
+  border-radius: 1px;
+}
+.box-styles {
+  @apply rounded-lg shadow-md p-6 flex flex-col;
+}
+.box-header {
+  @apply self-end mb-4;
+}
+.badge-styles {
+  @apply bg-purple-200 text-blue-800 text-sm font-semibold px-2.5 py-0.5 rounded-full inline-flex items-center;
+}
+.box-content {
+  @apply flex items-center mb-3;
+}
+.box-details {
+  @apply space-y-2 text-gray-700;
+}
