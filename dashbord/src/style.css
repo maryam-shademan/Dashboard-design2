@@ -1,5 +1,5 @@
 @import "tailwindcss";
-/* فایل styles.css */
+
 @font-face {
   font-family: 'GeistMono';
   src: url('../public//fonts/lazlo.woff2') format('woff2');
@@ -39,4 +39,13 @@ body {
 }
 .box-details {
   @apply space-y-2 text-gray-700;
+}
+
+.gradient-box {
+  background-image: linear-gradient(to bottom right, #843CF6, #38B8F2);
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  height: 50%;
 }
