@@ -22,8 +22,7 @@
     />
     <script src="./src/main.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-
+  </head>
 
   <body class="bg-gray-100">
     <!-- Header -->
@@ -171,11 +170,42 @@
     </header>
 
     <!-- Main Content -->
-    <main class="pl-6 mt-10 pr-72 w-full">
-      <section class="bg-white rounded-xl shadow-lg p-6 w-full h-auto">
-        <div class="flex flex-row space-x-4 w-full">
+    <main class="pl-48 mt-10 pr-96 w-full">
+      <section class="bg-white p-6 w-full h-auto">
+        <div class="bg-white p-6">
+          <!-- استفاده از flex برای قرار دادن آیکون و متن در یک ردیف -->
+          <div class="flex items-center">
+            <!-- آیکون چارت -->
+            <div class="flex-shrink-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 text-blue-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                />
+              </svg>
+            </div>
+            <!-- متن‌ها -->
+            <div class="mr-4">
+              <div class="text-2xl font-bold text-gray-800">
+                بررسی اجمالی معاملات
+              </div>
+              <div class="text-lg text-blue-600 mt-2">
+                به روز رسانی در (03:20)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row space-x-6 w-full">
           <!-- باکس اول -->
-          <div class="flex flex-col border-l-4 border-gray-100 p-2 flex-none">
+          <div class="flex flex-col border-l-4 border-gray-100 p-4 flex-1">
             <div class="flex items-center mb-4">
               <img
                 src="./public/img/عکس1.jpg"
@@ -221,7 +251,7 @@
           </div>
 
           <!-- باکس دوم -->
-          <div class="bg-white border-l-4 border-gray-100 p-6 w-1/2">
+          <div class="flex flex-col border-l-4 border-gray-100 p-4 flex-3">
             <div class="flex items-center mb-4">
               <i
                 class="fas fa-sun text-gray-500 text-xl ml-3"
@@ -229,7 +259,7 @@
               ></i>
               <h2 class="text-xl font-semibold">جزئیات حساب</h2>
             </div>
-            <div class="grid grid-cols-2 gap-2">
+            <div class="grid grid-cols-2 gap-4">
               <!-- فیلد ورود -->
               <div class="relative">
                 <label for="login" class="sr-only">ورود</label>
@@ -238,10 +268,10 @@
                   id="login"
                   placeholder="ورود"
                   value="22073937"
-                  class="w-full p-2 border border-gray-300 rounded-lg pr-5"
+                  class="w-full p-2 border border-gray-300 rounded-lg pr-10"
                 />
                 <i
-                  class="fas fa-copy text-gray-200 text-xl absolute inset-y-2 flex right-10/12 items-center pr-5"
+                  class="fas fa-copy text-gray-400 text-xl absolute inset-y-2 right-2 cursor-pointer"
                   aria-label="کپی"
                 ></i>
               </div>
@@ -254,13 +284,15 @@
                   type="password"
                   id="investor-password"
                   placeholder="رمز سرمایه‌گذار"
-                  class="w-full p-2 border border-gray-300 rounded-lg"
+                  class="w-full p-2 border border-gray-300 rounded-lg pr-10"
                 />
-                <a
-                  href="#"
-                  class="absolute inset-y-0 right-90 flex items-center pr-3 text-blue-500 hover:text-blue-700 text-sm underline"
-                  >setpassword</a
-                >
+                <div class="flex justify-end items-center -mt-7 px-2.5">
+                  <a
+                    href="#"
+                    class="text-blue-500 hover:text-blue-700 text-sm underline"
+                    >setpassword</a
+                  >
+                </div>
               </div>
               <!-- فیلد تنظیم رمز -->
               <div class="relative">
@@ -270,11 +302,9 @@
                   id="main-password"
                   placeholder="رمز اصلی"
                   value="Baset View"
-                  class="w-full p-2 border border-gray-300 rounded-lg pr-72"
+                  class="w-full p-2 border border-gray-300 rounded-lg pr-10"
                 />
-                <div
-                  class="absolute inset-y-1 right-90 flex items-center space-x-2 pr-3"
-                >
+                <div class="flex justify-end items-center space-x-2 -mt-7">
                   <a
                     href="#"
                     class="text-blue-500 hover:text-blue-700 text-sm underline"
@@ -288,7 +318,7 @@
                 </div>
               </div>
               <!-- فیلد سرور -->
-              <div>
+              <div class="relative">
                 <label for="server" class="sr-only">سرور</label>
                 <input
                   type="password"
@@ -301,7 +331,7 @@
           </div>
 
           <!-- باکس سوم -->
-          <div class="bg-white p-6 w-96">
+          <div class="flex flex-col p-4 flex-1">
             <div class="flex items-center mb-4">
               <i
                 class="fas fa-chart-line text-blue-500 text-xl ml-3"
@@ -327,7 +357,17 @@
         </div>
       </section>
 
-      <div class="grid grid-cols-5 grid-rows-1 gap-3.5">
+      <!-- chartjs -->
+      <section
+        class="items-center justify-center rounded-lg bg-white shadow-lg mt-5 mr-2 h-10/12"
+      >
+        <div style="width: 100%; height: 200px">
+          <!-- تنظیم ارتفاع نمودار -->
+          <canvas id="myLineChart"></canvas>
+        </div>
+      </section>
+
+      <div class="grid grid-cols-4 grid-rows-1 gap-3.5">
         <!-- grid 1 -->
         <div class="col-span-4">
           <section class="mt-5">
@@ -365,7 +405,7 @@
                   </div>
                   <!-- نشانه درصد ضرر -->
                   <span
-                    class="badge-styles text-red-800 text-sm font-semibold px-4 py-1 rounded-full self-end ml-48 mb-14"
+                    class="badge-styles text-red-800 text-sm font-semibold px-4 py-1 rounded-full self-end mr-48 mb-14"
                   >
                     7.25%-
                   </span>
@@ -399,6 +439,7 @@
               </div>
             </div>
           </section>
+
           <section class="mt-5">
             <section class="bg-white rounded-lg shadow-lg p-6 w-full">
               <div class="flex items-center justify-start space-x-4">
@@ -428,7 +469,7 @@
                       <i class="fas fa-circle text-purple-600 text-sm mr-2"></i>
                     </span>
                   </div>
-                  <div class="relative size-20 mr-80 mb-9">
+                  <div class="relative size-28 self-center mr-96 mb-9">
                     <svg
                       class="size-full"
                       viewBox="0 0 36 36"
@@ -494,45 +535,7 @@
                       <i class="fas fa-circle text-green-500 text-sm mr-2"></i>
                     </span>
                   </div>
-                  <div class="relative size-20 mr-80 mb-9">
-                    <svg
-                      class="size-full"
-                      viewBox="0 0 36 36"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <!-- دایره پس‌زمینه -->
-                      <circle
-                        cx="18"
-                        cy="18"
-                        r="16"
-                        fill="none"
-                        class="stroke-current text-white dark:text-neutral-700"
-                        stroke-width="2"
-                      ></circle>
-                      <!-- دایره پیشرفت -->
-                      <circle
-                        cx="18"
-                        cy="18"
-                        r="16"
-                        fill="none"
-                        class="stroke-current text-red-800 dark:text-blue-500"
-                        stroke-width="2"
-                        stroke-dasharray="120"
-                        stroke-dashoffset="35"
-                        stroke-linecap="round"
-                      ></circle>
-                      <!-- متن درصد در جهت محور X -->
-                      <text
-                        x="50%"
-                        y="50%"
-                        dominant-baseline="middle"
-                        text-anchor="middle"
-                        class="text-[10px] font-bold fill-red-800 dark:fill-red-800"
-                      >
-                        95%
-                      </text>
-                    </svg>
-                  </div>
+                  <div class="relative size-28 self-center mr-96 mb-9"></div>
                   <div class="box-content -mt-32">
                     <i
                       class="fas fa-check-circle text-blue-500 text-xl ml-3"
@@ -559,7 +562,7 @@
                       <i class="fas fa-circle text-red-500 text-sm mr-2"></i>
                     </span>
                   </div>
-                  <div class="relative size-20 mr-80 mb-9">
+                  <div class="relative size-28 self-center mr-96 mb-9">
                     <svg
                       class="size-full"
                       viewBox="0 0 36 36"
@@ -583,7 +586,7 @@
                         class="stroke-current text-red-800 dark:text-blue-500"
                         stroke-width="2"
                         stroke-dasharray="75"
-                        stroke-dashoffset="35"
+                        stroke-dashoffset="45"
                         stroke-linecap="round"
                       ></circle>
                       <!-- متن درصد در جهت محور X -->
@@ -624,7 +627,7 @@
                       <i class="fas fa-circle text-yellow-400 text-sm mr-2"></i>
                     </span>
                   </div>
-                  <div class="relative size-20 mr-80 mb-9">
+                  <div class="relative size-28 self-center mr-96 mb-9">
                     <svg
                       class="size-full"
                       viewBox="0 0 36 36"
@@ -647,8 +650,8 @@
                         fill="none"
                         class="stroke-current text-red-800 dark:text-blue-500"
                         stroke-width="2"
-                        stroke-dasharray="100"
-                        stroke-dashoffset="35"
+                        stroke-dasharray="40"
+                        stroke-dashoffset="40"
                         stroke-linecap="round"
                       ></circle>
                       <!-- متن درصد در جهت محور X -->
@@ -682,235 +685,115 @@
         </div>
 
         <!-- grid 2 -->
-        <div
-          class="gradient-box z-auto shadow-xl rounded-lg p-6 max-w-md mx-auto mt-5 border border-gray-200"
-        >
-          <!-- عنوان -->
-          <div class="text-center mb-5">
-            <h2 class="text-xl font-semibold text-white">
-              پشتیبانی ایمیل FundedNext
-            </h2>
-            <p class="text-white mt-3">
-              تماس:
-              <a
-                href="mailto:support@fundednext.com"
-                class="text-white hover:underline"
-                >support@fundednext.com</a
-              >
-            </p>
-            <div
-              class="mt-3 inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full"
-            >
-              <i class="fas fa-envelope text-blue-500 text-xl"></i>
-            </div>
-          </div>
-          <div
-            class="bg-gradient-to-r from-blue-50 to-blue-100 p-4 rounded-lg border border-blue-200 text-center"
-          >
-            <p class="text-gray-700 mb-2">
-              زیان مجاز امروز در زمان زیر ریست می‌شود:
-            </p>
-            <div
-              class="inline-block border-2 border-blue-300 rounded-lg px-4 py-2 bg-white"
-            >
-              <span class="text-3xl font-bold text-red-600">۱۰:۴۶:۲۵</span>
-            </div>
-          </div>
-        </div>
       </div>
+      <!-- tabel chart -->
+      <section class="mt-4">
+        <div class="mx-auto">
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h2 class="text-xl font-semibold mb-4 text-black">
+                    <i class="fas fa-chart-line ml-2 text-blue-500"></i> آمار دقیق
+                </h2>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white">
+                        <thead>
+                            <tr>
+                                <th class="text-sm bg-gray-200 text-gray-800 text-right p-2">عنوان</th>
+                                <th class="text-sm bg-gray-200 text-gray-800 text-right p-2">مقدار</th>
+                                <th class="text-sm bg-gray-200 text-gray-800 text-right p-2">عنوان</th>
+                                <th class="text-sm bg-gray-200 text-gray-800 text-right p-2">مقدار</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                <td class="text-sm text-gray-500 p-2">سرمایه</td>
+                                <td class="font-bold p-2">$5,456.00</td>
+                                <td class="text-sm text-gray-500 p-2">وام</td>
+                                <td class="font-bold p-2">19.95</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                <td class="text-sm text-gray-500 p-2">بدترین معامله</td>
+                                <td class="font-bold p-2">540.83</td>
+                                <td class="text-sm text-gray-500 p-2">موجودی</td>
+                                <td class="font-bold p-2">$5,555.00</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                <td class="text-sm text-gray-500 p-2">میانگین BMR</td>
+                                <td class="font-bold p-2">11.45</td>
+                                <td class="text-sm text-gray-500 p-2">Long Wan</td>
+                                <td class="font-bold p-2">56.48%</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                <td class="text-sm text-gray-500 p-2">نرخ برد</td>
+                                <td class="font-bold p-2">32.63%</td>
+                                <td class="text-sm text-gray-500 p-2">Short Wan</td>
+                                <td class="font-bold p-2">30.32%</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                <td class="text-sm text-gray-500 p-2">میانگین معامله سودآور</td>
+                                <td class="font-bold p-2">$52.71</td>
+                                <td class="text-sm text-gray-500 p-2">نرخ وام</td>
+                                <td class="font-bold p-2">67.87%</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                <td class="text-sm text-gray-500 p-2">سود ناخالص</td>
+                                <td class="font-bold p-2">$666.94</td>
+                                <td class="text-sm text-gray-500 p-2">میانگین معامله زیان‌ده</td>
+                                <td class="font-bold p-2">$53.50</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                <td class="text-sm text-gray-500 p-2">بلیط سود</td>
+                                <td class="font-bold p-2">0.7</td>
+                                <td class="text-sm text-gray-500 p-2">زیان ناخالص</td>
+                                <td class="font-bold p-2">41,254.77</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Add Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
       <!-- tabel -->
-      <section class="mt-10 px-3">
+      <section class="mt-10">
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <!-- Card Header -->
-          <div class="p-4 border-b border-gray-200 ">
-            <div class="flex items-center justify-between">
-              <!-- Search Input -->
-              <div class="flex items-center space-x-2">
-                <button class="p-2 text-gray-500 hover:text-gray-700">
-                  <svg
-                    class="w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"
-                    ></path>
-                  </svg>
-                </button>
-                <div class="relative">
-                  <input
-                    type="text"
-                    placeholder="شماره فاکتور را وارد کنید"
-                    class="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                  />
-                  <div
-                    class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
-                  >
-                    <svg
-                      class="w-5 h-5 text-gray-400"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Sort and Filter Buttons -->
-              <div class="flex items-center space-x-4">
-                <div class="relative">
-                  <select
-                    class="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                  >
-                    <option>جدیدترین اول</option>
-                  </select>
-                  <div
-                    class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none"
-                  >
-                    <svg
-                      class="w-5 h-5 text-gray-400"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M7 10l5 5 5-5z"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <div class="relative">
-                  <select
-                    class="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                  >
-                    <option>مرتب‌سازی بر اساس</option>
-                  </select>
-                  <div
-                    class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none"
-                  >
-                    <svg
-                      class="w-5 h-5 text-gray-400"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M7 10l5 5 5-5z"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Invoice Filters -->
-            <div class="mt-4 flex items-center justify-between">
-              <div class="flex items-center space-x-4">
-                <p class="text-gray-700">فاکتورها</p>
-                <div class="flex items-center space-x-2">
-                  <div
-                    class="flex items-center space-x-1 bg-gray-100 px-3 py-1 rounded-full"
-                  >
-                    <span class="text-sm text-gray-700">25</span>
-                    <span class="text-sm text-gray-700">همه</span>
-                  </div>
-                  <div
-                    class="flex items-center space-x-1 bg-gray-100 px-3 py-1 rounded-full"
-                  >
-                    <span class="text-sm text-gray-700">7</span>
-                    <span class="text-sm text-gray-700">پرداخت‌نشده</span>
-                  </div>
-                  <div
-                    class="flex items-center space-x-1 bg-blue-100 px-3 py-1 rounded-full"
-                  >
-                    <span class="text-sm text-blue-700">18</span>
-                    <span class="text-sm text-blue-700">پرداخت‌شده</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Sort By -->
-              <div class="flex items-center space-x-4">
-                <p class="text-gray-700">مرتب‌سازی بر اساس</p>
-                <div class="relative">
-                  <select
-                    class="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                  >
-                    <option>جدیدترین اول</option>
-                  </select>
-                  <div
-                    class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none"
-                  >
-                    <svg
-                      class="w-5 h-5 text-gray-400"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M7 10l5 5 5-5z"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <button class="p-2 text-blue-500 hover:text-blue-700">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                      d="M21 4V6H20L15 13.5V22H9V13.5L4 6H3V4H21ZM6.4037 6L11 12.8944V20H13V12.8944L17.5963 6H6.4037Z"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card Content -->
           <div class="p-4">
             <div class="overflow-x-auto">
               <table class="min-w-full">
                 <thead>
-                  <tr class="bg-gray-100">
-                    <th class="px-4 py-2 text-left text-gray-700">
-                      شماره فاکتور
+                  <tr class="bg-gray-200">
+                    <th class="px-4 py-2 text-right text-gray-700">
+                      زمان باز شدن
                     </th>
-                    <th class="px-4 py-2 text-left text-gray-700">مبلغ</th>
-                    <th class="px-4 py-2 text-left text-gray-700">
-                      تاریخ صدور
+                    <th class="px-4 py-2 text-right text-gray-700">
+                      قیمت باز شدن
                     </th>
-                    <th class="px-4 py-2 text-left text-gray-700">
-                      تاریخ سررسید
+                    <th class="px-4 py-2 text-right text-gray-700">سود</th>
+                    <th class="px-4 py-2 text-right text-gray-700">ضرر</th>
+                    <th class="px-4 py-2 text-right text-gray-700">کمیسیون</th>
+                    <th class="px-4 py-2 text-right text-gray-700">محدوده</th>
+                    <th class="px-4 py-2 text-right text-gray-700">
+                      سود خالص (پوند)
                     </th>
-                    <th class="px-4 py-2 text-left text-gray-700">وضعیت</th>
-                    <th class="px-4 py-2 text-left text-gray-700">اقدام</th>
+                    <th class="px-4 py-2 text-right text-gray-700">نماد</th>
+                    <th class="px-4 py-2 text-right text-gray-700">نوع</th>
+                    <th class="px-4 py-2 text-right text-gray-700">جزئیات</th>
                   </tr>
                 </thead>
                 <tbody>
                   <!-- Row 1 -->
                   <tr class="border-b border-gray-200">
-                    <td class="px-4 py-2">#12232</td>
-                    <td class="px-4 py-2">26 دلار</td>
                     <td class="px-4 py-2">25 اکتبر 2023</td>
-                    <td class="px-4 py-2">29 اکتبر 2023</td>
+                    <td class="px-4 py-2">26 دلار</td>
+                    <td class="px-4 py-2">50 دلار</td>
+                    <td class="px-4 py-2">10 دلار</td>
+                    <td class="px-4 py-2">5 دلار</td>
+                    <td class="px-4 py-2">100 پیپ</td>
+                    <td class="px-4 py-2">35 پوند</td>
+                    <td class="px-4 py-2">EUR/USD</td>
+                    <td class="px-4 py-2">خرید</td>
                     <td class="px-4 py-2">
                       <div
                         class="inline-flex items-center px-2 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm"
@@ -918,106 +801,44 @@
                         پرداخت‌نشده
                       </div>
                     </td>
-                    <td class="px-4 py-2">
-                      <div class="flex items-center space-x-2">
-                        <div
-                          class="inline-flex items-center px-2 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
-                        >
-                          پرداخت
-                        </div>
-                        <button class="p-2 text-gray-500 hover:text-gray-700">
-                          <svg
-                            class="w-5 h-5"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2m12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2m-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2"
-                            ></path>
-                          </svg>
-                        </button>
-                      </div>
-                    </td>
                   </tr>
 
                   <!-- Row 2 -->
                   <tr class="border-b border-gray-200">
-                    <td class="px-4 py-2">#12232</td>
-                    <td class="px-4 py-2">26 دلار</td>
-                    <td class="px-4 py-2">25 اکتبر 2023</td>
-                    <td class="px-4 py-2">29 اکتبر 2023</td>
+                    <td class="px-4 py-2">26 اکتبر 2023</td>
+                    <td class="px-4 py-2">27 دلار</td>
+                    <td class="px-4 py-2">60 دلار</td>
+                    <td class="px-4 py-2">15 دلار</td>
+                    <td class="px-4 py-2">7 دلار</td>
+                    <td class="px-4 py-2">120 پیپ</td>
+                    <td class="px-4 py-2">38 پوند</td>
+                    <td class="px-4 py-2">GBP/USD</td>
+                    <td class="px-4 py-2">فروش</td>
                     <td class="px-4 py-2">
                       <div
                         class="inline-flex items-center px-2 py-1 bg-green-100 text-green-700 rounded-full text-sm"
                       >
                         پرداخت‌شده
-                      </div>
-                    </td>
-                    <td class="px-4 py-2">
-                      <div class="flex items-center space-x-2">
-                        <div
-                          class="inline-flex items-center px-2 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
-                        >
-                          چاپ
-                        </div>
-                        <button class="p-2 text-gray-500 hover:text-gray-700">
-                          <svg
-                            class="w-5 h-5"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2m12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2m-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2"
-                            ></path>
-                          </svg>
-                        </button>
                       </div>
                     </td>
                   </tr>
 
                   <!-- Row 3 -->
                   <tr class="border-b border-gray-200">
-                    <td class="px-4 py-2">#12232</td>
-                    <td class="px-4 py-2">26 دلار</td>
-                    <td class="px-4 py-2">25 اکتبر 2023</td>
-                    <td class="px-4 py-2">29 اکتبر 2023</td>
+                    <td class="px-4 py-2">27 اکتبر 2023</td>
+                    <td class="px-4 py-2">28 دلار</td>
+                    <td class="px-4 py-2">70 دلار</td>
+                    <td class="px-4 py-2">20 دلار</td>
+                    <td class="px-4 py-2">10 دلار</td>
+                    <td class="px-4 py-2">150 پیپ</td>
+                    <td class="px-4 py-2">40 پوند</td>
+                    <td class="px-4 py-2">USD/JPY</td>
+                    <td class="px-4 py-2">خرید</td>
                     <td class="px-4 py-2">
                       <div
                         class="inline-flex items-center px-2 py-1 bg-green-100 text-green-700 rounded-full text-sm"
                       >
                         پرداخت‌شده
-                      </div>
-                    </td>
-                    <td class="px-4 py-2">
-                      <div class="flex items-center space-x-2">
-                        <div
-                          class="inline-flex items-center px-2 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
-                        >
-                          چاپ
-                        </div>
-                        <button class="p-2 text-gray-500 hover:text-gray-700">
-                          <svg
-                            class="w-5 h-5"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2m12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2m-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2"
-                            ></path>
-                          </svg>
-                        </button>
                       </div>
                     </td>
                   </tr>
@@ -1028,18 +849,8 @@
         </div>
       </section>
 
-      <!-- chartjs -->
-      <section class="items-center justify-center bg-white shadow-lg mt-5 mr-2 h-10/12">
-        <div style="width: 100%; height: 200px;"> <!-- تنظیم ارتفاع نمودار -->
-            <canvas id="myLineChart"></canvas>
-        </div>
-      </section>
-
-   
-
       <!-- Sidebar -->
       <section class="flex hidden h-screen overflow-hidden md:block">
-        
         <button
           id="menu-toggle"
           class="fixed top-4 left-4 p-2 bg-white rounded-lg shadow-lg lg:hidden"
@@ -1195,33 +1006,53 @@
 
     <!-- Script -->
     <script>
-     const ctx = document.getElementById('myLineChart').getContext('2d');
-    const myLineChart = new Chart(ctx, {
-        type: 'line',
+      const ctx = document.getElementById("myLineChart").getContext("2d");
+      const myLineChart = new Chart(ctx, {
+        type: "line",
         data: {
-            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-            datasets: [{
-                label: 'My First dataset',
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgb(75, 192, 192)', // سبز
-                data: [0, 10, 5, 2, 20, 30, 45],
-                pointBackgroundColor: 'white', // رنگ نقاط سفید
-                pointBorderColor: 'rgb(75, 192, 192)', // رنگ حاشیه نقاط سبز
-                pointRadius: 5, // اندازه نقاط
-                pointHoverRadius: 7 // اندازه نقاط هنگام hover
-            }]
+          labels: [
+            "Jan 2",
+            "Jan 3",
+            "Jan 4",
+            "Jan 5",
+            "Jan 6",
+            "Jan 7",
+            "Jan 8",
+            "Jan 9",
+            "Jan 10",
+            "Jan 11",
+            "Jan 12",
+            "Jan 13",
+            "Jan 14",
+          ],
+          datasets: [
+            {
+              label: "Equity Balance",
+              backgroundColor: "rgba(75, 192, 192, 0.2)",
+              borderColor: "rgb(255, 99, 132)",
+              borderDash: [5, 5], // این خط را نقطه‌چین می‌کند
+              data: [
+                6080, 5960, 6000, 6050, 6100, 6150, 6200, 6250, 6300, 6350,
+                6400, 6450, 6500,
+              ],
+              pointBackgroundColor: "red",
+              pointBorderColor: "rgb(75, 192, 192)",
+              pointRadius: 5,
+              pointHoverRadius: 7,
+              fill: false, // اگر می‌خواهید زیر خط پر شود
+            },
+          ],
         },
         options: {
-            responsive: true,
-            maintainAspectRatio: false, // برای کنترل ارتفاع بدون تغییر نسبت
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        }
-    });
-
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: {
+              beginAtZero: false,
+            },
+          },
+        },
+      });
     </script>
   </body>
 </html>
