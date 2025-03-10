@@ -21,9 +21,9 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
 
-  <body class="bg-gray-100 ">
+  <body class="bg-gray-100">
     <!-- Header -->
-    <header class="overflow-hidden">
+    <header>
       <div class="flex items-center justify-between p-4">
         <!-- Search Section -->
         <form class="form relative right-80">
@@ -167,7 +167,7 @@
     </header>
 
     <!-- Main Content -->
-    <main class="pl-48 mt-10 pr-96 w-full ">
+    <main class="pl-48 mt-10 pr-96 w-full">
       <section class="shadow-lg rounded-lg relative p-24 overflow-hidden">
         <!-- Background image with opacity -->
         <div class="absolute inset-0 z-0">
@@ -392,23 +392,11 @@
       </section>
 
   <!-- chartjs -->
-  <div class="flex space-x-2 items-end justify-center mt-3">
-    <button class="bg-blue-500 text-white px-6 py-3 rounded-md text-base font-medium hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-      چارت
-    </button>
-    <button class="border border-blue-500 text-blue-500 px-6 py-3 rounded-md text-base font-medium hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-      جدول
-    </button>
-  </div>
-  
 
   <section class="bg-white shadow-2xl rounded-2xl shadow-purple-200">
     <div class="bg-[#7352C7] mt-10 p-6 rounded-t-2xl">
       <div class="flex justify-between items-center">
         <h5 class="text-lg font-semibold text-white">آمار فروش</h5>
-        
-        
-        
         <button class="text-white hover:text-gray-700">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
@@ -1009,7 +997,7 @@
       </section>
 
       <!-- Sidebar -->
-      <section class="flex   overflow-hidden md:block">
+      <section class="flex hidden h-screen overflow-hidden md:block">
         <button
           id="menu-toggle"
           class="fixed top-4 left-4 p-2 bg-white rounded-lg shadow-lg lg:hidden"
@@ -1017,7 +1005,7 @@
           <i class="mdi mdi-menu text-gray-700 text-2xl"></i>
         </button>
 
-        <div class="flex mb-10 overflow-hidden">
+        <div class="flex h-screen overflow-hidden">
           <!-- سایدبار -->
           <div
             id="sidebar"
