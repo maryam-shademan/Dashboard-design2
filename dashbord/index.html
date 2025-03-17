@@ -89,7 +89,7 @@
               />
             </button>
             <div
-              class="absolute right-0 mt-2 w-32 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-opacity-5 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+              class="absolute right-0 mt-2 w-32 z-50 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-opacity-5 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity duration-200"
             >
               <div class="py-1">
                 <a href="#" class="text-gray-700 block px-4 py-2 text-sm">
@@ -167,83 +167,16 @@
     </header>
 
     <!-- Main Content -->
-    <main class="pl-48 mt-10 pr-96 w-full ">
-      <section class="shadow-lg rounded-lg relative p-24 overflow-hidden">
-        <!-- Background image with opacity -->
-        <div class="absolute inset-0 z-0">
-          <img
-            src="/img/دریا.jpg"
-            alt="Background"
-            class="w-full h-full object-cover opacity-20"
-          />
-        </div>
-
-        <!-- Content -->
-        <div class="relative">
-          <div class="flex flex-col lg:flex-row justify-between lg:gap-x-96">
-            <!-- First Column -->
-            <div class="flex items-center space-x-8">
-              <div class="w-24 h-24 rounded-full overflow-hidden">
-                <img
-                  src="/img//avatar10.jpg"
-                  alt="Kiley Brown"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <div>
-                <p class="text-lg font-semibold">کیلئی براون</p>
-                <p class="text-sm text-gray-800">فلوریدا، ایالات متحده</p>
-              </div>
-            </div>
-
-            <!-- Second Column -->
-            <div class="flex items-start space-x-6">
-              <div class="text-center">
-                <h6 class="text-lg font-semibold">457</h6>
-                <p class="text-sm text-gray-600">دنبال‌کنندگان</p>
-              </div>
-              <div class="w-px h-6 bg-gray-800"></div>
-              <div class="text-center">
-                <h6 class="text-lg font-semibold">689</h6>
-                <p class="text-sm text-gray-600">دوستان</p>
-              </div>
-              <div class="w-px h-6 bg-gray-800"></div>
-              <div class="text-center">
-                <h6 class="text-lg font-semibold">283</h6>
-                <p class="text-sm text-gray-600">دنبال‌شونده‌ها</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-6 flex justify-between items-center">
-            <ul class="flex space-x-4">
-              <li class="text-gray-700 hover:text-gray-900 cursor-pointer font-bold">
-                تایم‌لاین
-              </li>
-              <li class="text-gray-700 hover:text-gray-900 cursor-pointer font-bold">
-                درباره
-              </li>
-              <li class="text-gray-700 hover:text-gray-900 cursor-pointer font-bold">
-                عکس‌ها
-              </li>
-              <li class="text-gray-700 hover:text-gray-900 cursor-pointer font-bold">
-                دوستان
-              </li>
-              <li class="text-gray-700 hover:text-gray-900 cursor-pointer font-bold">
-                بیشتر
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+    <main class="pl-48 mt-10 pr-[450px] w-full ">
+     
 
 
 
-      <section class="-mt-19 z-10">
-        <div class="flex flex-wrap gap-4 p-4 px-40 z-30">
+      <section class="mt-10 ">
+        <div class="flex flex-wrap gap-4  ">
           <!-- Card 1: Contact -->
           <div
-            class="flex min-w-[300px] bg-white shadow-2xl rounded-2xl shadow-purple-200 overflow-hidden z-50"
+            class="flex  bg-white shadow-2xl rounded-2xl shadow-purple-200 overflow-hidden "
           >
             <div class="flex flex-col border-l-4 border-gray-100 p-4 flex-1">
               <div class="flex items-center mb-4">
@@ -254,12 +187,7 @@
                 />
                 <h2 class="text-xl font-semibold">سلام محمدحسین واحدی!</h2>
               </div>
-              <div class="flex items-center mb-3">
-                <p class="text-gray-700">
-                  در حال حاضر، شما یک حساب
-                  <span class="font-medium">استلار</span> دارید.
-                </p>
-              </div>
+              
               <div class="flex items-center mb-3">
                 <i class="fas fa-check-circle text-blue-500 text-xl ml-3"></i>
                 <p class="text-gray-700">
@@ -269,16 +197,16 @@
               <div class="flex items-center mb-3">
                 <i class="fas fa-check-circle text-blue-500 text-xl ml-3"></i>
                 <p class="text-gray-700">
-                  نوع برنامه:
+                   
                   <span class="font-medium"
-                    >چالش دو مرحله‌ای استلار P11 6K</span
+                    >چالش دو مرحله‌ای استلار </span
                   >
                 </p>
               </div>
               <div class="flex items-center">
                 <i class="fas fa-check-circle text-blue-500 text-xl ml-3"></i>
                 <p class="text-gray-700">
-                  نوع حساب: <span class="font-medium">سواپ</span>
+                  نوع حساب: <span class="font-medium">سواپ است</span>
                 </p>
               </div>
             </div>
@@ -286,7 +214,7 @@
 
           <!-- Card 2: About -->
           <div
-            class="flex-1 min-w-[300px] bg-white shadow-2xl rounded-2xl shadow-purple-200 overflow-hidden z-50 items-center justify-self-center"
+            class="flex-1 min-w-[300px] bg-white shadow-2xl rounded-2xl shadow-purple-200 overflow-hidden  items-center justify-self-center"
           >
             <div class="grid grid-cols-3 gap-12 p-4">
               <!-- ستون اول -->
@@ -319,7 +247,7 @@
                       type="password"
                       id="investor-password"
                       placeholder="رمز سرمایه‌گذار"
-                      class="w-full p-2 border border-gray-300 rounded-lg pr-10"
+                      class="w-full p-2 border border-gray-300 rounded-lg "
                     />
                     <div class="flex justify-end items-center -mt-7 px-2.5">
                       <a
@@ -337,19 +265,23 @@
                       id="main-password"
                       placeholder="رمز اصلی"
                       value="Baset View"
-                      class="w-full p-2 border border-gray-300 rounded-lg pr-10"
+                      class="w-full p-2 border border-gray-300 rounded-lg pr-10" 
                     />
-                    <div class="flex justify-end items-center space-x-2 -mt-7">
-                      <a
-                        href="#"
-                        class="text-blue-500 hover:text-blue-700 text-sm underline"
-                        >View</a
+                    <!-- آیکون چشم -->
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 text-gray-400 cursor-pointer"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
                       >
-                      <a
-                        href="#"
-                        class="text-blue-500 hover:text-blue-700 text-sm underline"
-                        >Review</a
-                      >
+                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                        <path
+                          fill-rule="evenodd"
+                          d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
                     </div>
                   </div>
                   <!-- فیلد سرور -->
@@ -366,8 +298,8 @@
               </div>
 
               <!-- ستون دوم -->
-              <div class="col-span">
-                <div class="flex items-center mb-4">
+              <div class="col-span self-center ">
+                <div class="flex items-end mb-4">
                   <i class="fas fa-chart-line text-blue-500 text-xl ml-3"></i>
                   <h2 class="text-xl font-semibold">جزئیات چرخه معاملاتی</h2>
                 </div>
@@ -381,7 +313,7 @@
                   <!-- تاریخ پایان -->
                   <div class="flex items-center">
                     <p class="text-gray-700">
-                      تاریخ پایان: <span class="font-medium">نامحدود</span>
+                      تاریخ پایان: <span class="font-medium">نامحدود است</span>
                     </p>
                   </div>
                 </div>
@@ -390,25 +322,117 @@
           </div>
         </div>
       </section>
+          <!-- بخش امار -->
+
+          <section class="mt-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <!-- باکس اول -->
+              <div class="bg-gradient-to-t from-[#7e57c2] bg-[#9575cd] shadow-xl rounded-xl flex flex-col justify-between">
+                <div class="flex items-center text-center px-4 mt-4">
+                  <h6 class="text-lg font-semibold text-gray-700">موجودی</h6>
+                </div>
+                <div class="mt-1">
+                  <h2 class="text-3xl font-bold text-gray-900 px-4 mt-4">26,873</h2>
+                  <h6 class="text-sm text-gray-600 px-4 mt-4">93% این هفته</h6>
+                </div>
+                <div class="mt-1">
+                  <div class="mb-3">
+                    <svg class="w-full h-full" viewBox="0 0 308 95" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#7e57c2" d="M0,76L44,66.5L88,42.75L132,47.5L176,28.5L220,52.25L264,21.85L308,9.5L308,95L264,95L220,95L176,95L132,95L88,95L44,95L0,95Z"></path>
+                      <path stroke="#c7a4ff" fill="none" d="M0,76L44,66.5L88,42.75L132,47.5L176,28.5L220,52.25L264,21.85L308,9.5"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- باکس دوم -->
+              <div class="bg-gradient-to-t from-[#e91e1b] bg-[#f04542] shadow-xl rounded-xl flex flex-col justify-between">
+                <div class="flex items-center text-center px-4 mt-4">
+                  <h6 class="text-lg font-semibold text-gray-700 mt-4">سود و زیان</h6>
+                </div>
+                <div class="mt-1 px-0">
+                  <h2 class="text-3xl font-bold text-gray-900 px-4 mt-4">26,873</h2>
+                  <h6 class="text-sm text-gray-600 px-4 mt-4">93% این هفته</h6>
+                </div>
+                <div class="mt-1">
+                  <div class="mb-3">
+                    <svg class="w-full h-full" viewBox="0 0 308 95" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#e91e1b" d="M0,76L44,66.5L88,42.75L132,47.5L176,28.5L220,52.25L264,21.85L308,9.5L308,95L264,95L220,95L176,95L132,95L88,95L44,95L0,95Z"></path>
+                      <path stroke="#f08a7d" fill="none" d="M0,76L44,66.5L88,42.75L132,47.5L176,28.5L220,52.25L264,21.85L308,9.5"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- باکس سوم -->
+              <div class="bg-gradient-to-t from-[#12aaaa] bg-[#23bcbc] shadow-xl rounded-xl flex flex-col justify-between">
+                <div class="flex items-center">
+                  <h6 class="text-lg font-semibold text-gray-700 px-4 mt-4">ضرر های مکرر</h6>
+                </div>
+                <div class="mt-4">
+                  <h2 class="text-3xl font-bold text-gray-900 px-4">26,873</h2>
+                  <h6 class="text-sm text-gray-600 px-4 mt-4">93% این هفته</h6>
+                </div>
+                <div class="mt-4">
+                  <div class="mb-3">
+                    <svg class="w-full h-full" viewBox="0 0 308 95" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#12aaaa" d="M0,76L44,66.5L88,42.75L132,47.5L176,28.5L220,52.25L264,21.85L308,9.5L308,95L264,95L220,95L176,95L132,95L88,95L44,95L0,95Z"></path>
+                      <path stroke="#c7a4ff" fill="none" d="M0,76L44,66.5L88,42.75L132,47.5L176,28.5L220,52.25L264,21.85L308,9.5"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- باکس چهارم -->
+              <div class="bg-gradient-to-t from-[#2691e9] to-[#42a5f5] shadow-xl rounded-xl flex flex-col justify-between">
+                <div class="flex items-center">
+                  <h6 class="text-lg font-semibold text-gray-700 px-4 mt-4">ضرر های مکرر</h6>
+                </div>
+                <div class="mt-4">
+                  <h2 class="text-3xl font-bold text-gray-900 px-4">26,873</h2>
+                  <h6 class="text-sm text-gray-600 px-4 mt-4">93% این هفته</h6>
+                </div>
+                <div class="-mt-4">
+                  <div class="mb-3">
+                    <svg class="w-full h-full" viewBox="0 0 308 95" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#2691e9" d="M0,76L44,66.5L88,42.75L132,47.5L176,28.5L220,52.25L264,21.85L308,9.5L308,95L264,95L220,95L176,95L132,95L88,95L44,95L0,95Z"></path>
+                      <path stroke="#c7a4ff" fill="none" d="M0,76L44,66.5L88,42.75L132,47.5L176,28.5L220,52.25L264,21.85L308,9.5"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
 
   <!-- chartjs -->
-  <div class="flex space-x-2 items-end justify-center mt-3">
-    <button class="bg-blue-500 text-white px-6 py-3 rounded-md text-base font-medium hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-      چارت
-    </button>
-    <button class="border border-blue-500 text-blue-500 px-6 py-3 rounded-md text-base font-medium hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-      جدول
-    </button>
-  </div>
+
   
 
   <section class="bg-white shadow-2xl rounded-2xl shadow-purple-200">
-    <div class="bg-[#7352C7] mt-10 p-6 rounded-t-2xl">
-      <div class="flex justify-between items-center">
-        <h5 class="text-lg font-semibold text-white">آمار فروش</h5>
+  <div class="bg-[#7352C7] mt-10 p-6 rounded-t-2xl">
+    <div class="flex justify-between items-center">
+      <h5 class="text-lg font-semibold text-white">آمار فروش</h5>
+      
+      <div class="flex items-center space-x-2"> <!-- فضای بین دکمه‌ها -->
+        <!-- دکمه چارت -->
+        <button class="text-white  bg-purple-900 p-1 rounded-lg hover:text-gray-700 flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
+          </svg>
+          <span class="mr-2">چارت</span>
+        </button>
         
+        <!-- دکمه جدول -->
+        <button class="text-white  p-1 rounded-lg hover:text-gray-700 flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M5 4a1 1 0 011-1h8a1 1 0 011 1v12a1 1 0 01-1 1H6a1 1 0 01-1-1V4zm2 2v2h2V6H7zm4 0v2h2V6h-2zm-4 4v2h2v-2H7zm4 0v2h2v-2h-2zm-4 4v2h2v-2H7zm4 0v2h2v-2h-2z" clip-rule="evenodd" />
+          </svg>
+          <span class="mr-2">جدول</span>
+        </button>
         
-        
+        <!-- آیکون سه نقطه -->
         <button class="text-white hover:text-gray-700">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
@@ -416,8 +440,10 @@
         </button>
       </div>
     </div>
+  </div>
+</section>
   
-    <div class="flex justify-evenly gap-6 mb-4 text-center bg-[#7352C7] p-6 ">
+    <div class="flex justify-evenly gap-4 mb-8 text-center bg-[#7352C7] p-6 ">
       <!-- Order Stats -->
       <div class="flex items-center justify-center space-x-2">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -429,16 +455,7 @@
         </div>
       </div>
   
-      <div class="flex items-center justify-center space-x-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-        </svg>
-        <div>
-          <p class="text-white">6,478</p>
-          <h6 class="text-xl text-white">سفارشات هفتگی</h6>
-        </div>
-      </div>
-  
+      
       <div class="flex items-center justify-center space-x-2">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -469,24 +486,16 @@
         </div>
       </div>
   
-      <div class="flex items-center justify-center space-x-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-        <div>
-          <p class="text-white">8,543</p>
-          <h6 class="text-xl text-white">سفارشات گذشته</h6>
-        </div>
-      </div>
+     
     </div>
   
-    <div class="grid grid-cols-1 lg:grid-cols-2 p-6">
-      <div class="bg-gray-50 p-4 rounded-lg">
+    <div class="grid grid-cols-1 lg:grid-cols-2 p-6 bg-amber-50 -mt-8">
+      <div class=" p-4 rounded-lg">
         <canvas id="lineChart"></canvas>
       </div>
-      <div class="bg-gray-50 p-4 rounded-lg relative max-h-4/5 mr-60">
+      <div class=" p-4 rounded-lg relative max-h-4/5 mr-60">
         <canvas id="radialChart"></canvas>
-        <ul class="space-y-2 text-sm text-gray-600 absolute  mt-5">
+        <ul class="space-y-2 text-sm text-gray-600 absolute  ">
           <li class="flex items-center">
             <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
             میانگین درآمد
@@ -559,85 +568,7 @@
         </script>
       </section>
 
-      <section class="mt-10">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-4">
-          <!-- بخش املاک -->
-          <div class="bg-[#9575cd] shadow-lg rounded-3xl flex flex-col justify-between">
-            <div class="flex items-center text-center px-4 mt-4 ">
-              <h6 class="text-lg font-semibold text-gray-700">موجودی</h6>
-            </div>
-            <div class="mt-1">
-              <h2 class="text-3xl font-bold text-gray-900  px-4 mt-4 ">26,873</h2>
-              <h6 class="text-sm text-gray-600  px-4 mt-4 ">93% این هفته</h6>
-            </div>
-            <div class="mt-1">
-              <div class="">
-                <svg class="w-full h-full" viewBox="0 0 308 95" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#7e57c2" d="M0,76L44,66.5L88,42.75L132,47.5L176,28.5L220,52.25L264,21.85L308,9.5L308,95L264,95L220,95L176,95L132,95L88,95L44,95L0,95Z"></path>
-                  <path stroke="#c7a4ff" fill="none" d="M0,76L44,66.5L88,42.75L132,47.5L176,28.5L220,52.25L264,21.85L308,9.5"></path>
-                </svg>
-              </div>
-            </div>
-          </div>
       
-          <!-- بخش شهرها -->
-          <div class="bg-[#f04542] shadow-lg rounded-3xl  flex flex-col justify-between">
-            <div class="flex items-center text-center px-4 mt-4">
-              <h6 class="text-lg font-semibold text-gray-700  mt-4 ">سود و زیان</h6>
-            </div>
-            <div class="mt-1 px-0">
-              <h2 class="text-3xl font-bold text-gray-900  px-4 mt-4 ">26,873</h2>
-              <h6 class="text-sm text-gray-600  px-4 mt-4 ">93% این هفته</h6>
-            </div>
-            <div class="mt-1 ">
-              <div class="">
-                <svg class="w-full h-full" viewBox="0 0 308 95" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#e91e1b" d="M0,76L44,66.5L88,42.75L132,47.5L176,28.5L220,52.25L264,21.85L308,9.5L308,95L264,95L220,95L176,95L132,95L88,95L44,95L0,95Z"></path>
-                  <path stroke="#f08a7d" fill="none" d="M0,76L44,66.5L88,42.75L132,47.5L176,28.5L220,52.25L264,21.85L308,9.5"></path>
-                </svg>
-              </div>
-            </div>
-          </div>
-      
-          <!-- بخش بازدیدهای آنلاین -->
-          <div class="bg-[#23bcbc] shadow-lg rounded-3xl  flex flex-col justify-between">
-            <div class="flex items-center ">
-              <h6 class="text-lg font-semibold text-gray-700 px-4 mt-4">ضرر های مکرر</h6>
-            </div>
-            <div class="mt-4">
-              <h2 class="text-3xl font-bold text-gray-900 px-4 ">26,873</h2>
-              <h6 class="text-sm text-gray-600 px-4 mt-4">93% این هفته</h6>
-            </div>
-            <div class="mt-4 ">
-              <div class=" ">
-                <svg class="w-full h-full" viewBox="0 0 308 95" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#12aaaa" d="M0,76L44,66.5L88,42.75L132,47.5L176,28.5L220,52.25L264,21.85L308,9.5L308,95L264,95L220,95L176,95L132,95L88,95L44,95L0,95Z"></path>
-                  <path stroke="#c7a4ff" fill="none" d="M0,76L44,66.5L88,42.75L132,47.5L176,28.5L220,52.25L264,21.85L308,9.5"></path>
-                </svg>
-              </div>
-            </div>
-          </div>
-      
-          <!-- بخش پرس‌وجوهای آنلاین -->
-          <div class="bg-[#42a5f5] shadow-lg rounded-3xl  flex flex-col justify-between">
-            <div class="flex items-center ">
-              <h6 class="text-lg font-semibold text-gray-700 px-4 mt-4">ضرر های مکرر</h6>
-            </div>
-            <div class="mt-4">
-              <h2 class="text-3xl font-bold text-gray-900 px-4 ">26,873</h2>
-              <h6 class="text-sm text-gray-600 px-4 mt-4">93% این هفته</h6>
-            </div>
-            <div class="mt-4 rounded-b-2xl">
-              <div class="rounded-b-2xl ">
-                <svg class="w-full h-full" viewBox="0 0 308 95" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#2691e9" d="M0,76L44,66.5L88,42.75L132,47.5L176,28.5L220,52.25L264,21.85L308,9.5L308,95L264,95L220,95L176,95L132,95L88,95L44,95L0,95Z"></path>
-                  <path stroke="#c7a4ff" fill="none" d="M0,76L44,66.5L88,42.75L132,47.5L176,28.5L220,52.25L264,21.85L308,9.5"></path>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       
       
       <section class="mt-10">
